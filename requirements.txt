@@ -1,0 +1,18 @@
+numpy>=1.24
+pandas>=2.0
+openpyxl>=3.1
+pyomo>=6.7
+scipy>=1.11
+
+# Solvers
+#
+# Most models use Gurobi. It requires a license (a free academic license is
+# available) and is installed separately:
+#     pip install gurobipy
+#
+# The model ac_opf_nonlinear.py in case 02 uses IPOPT, which is free and is
+# installed with conda:
+#     conda install -c conda-forge ipopt
+#
+# In both cases the SolverFactory(...) line inside the model can be replaced
+# with a different solver depending on the problem type.
